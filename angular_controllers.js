@@ -13,4 +13,8 @@ myApp.controller("master-controller", function ($scope) {
 });
 myApp.controller("sub-estado", function ($scope) {
     $scope.name = "sub-estado-controller"
-})
+});
+
+myApp.controller("controller-input", function ($scope) {
+    $scope.name = "controller-input";
+});
