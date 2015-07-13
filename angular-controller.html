@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+</head>
+<body>
+<div ng-controller="master-controller">
+    <div ng-controller="names">
+        {{name}}
+    </div>
+
+    <div ng-controller="estados">
+        {{name}}
+        <div ng-controller="sub-estado">
+            {{name}}F
+        </div>
+    </div>
+    {{name}}
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+<script src="angular_controllers.js"></script>
+</body>
+</html>
