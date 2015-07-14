@@ -18,6 +18,27 @@
     {{name}}
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
-<script src="angular_controllers.js"></script>
+<script type="text/javascript">
+    var myApp = angular.module("myApp", []);
+
+    myApp.controller("estados", function ($scope) {
+        $scope.name = "controller-estados";
+    });
+
+    myApp.controller("names", function ($scope) {
+        $scope.name = "controller-names";
+    });
+
+    myApp.controller("master-controller", function ($scope) {
+        $scope.name = "controller-master";
+    });
+    myApp.controller("sub-estado", function ($scope) {
+        $scope.name = "sub-estado-controller"
+    });
+
+    myApp.controller("controller-input", function ($scope) {
+        $scope.name = "controller-input";
+    });
+</script>
 </body>
 </html>
