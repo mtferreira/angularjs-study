@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>angular watch</title>
+</head>
+<body ng-app="myApp">
+<div ng-controller="controller-inputs">
+    <input type="text" ng-model="name">
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+<script type="text/javascript">
+    var myApp = angular.module("myApp", []);
+
+    myApp.controller("controller-inputs", function ($scope) {
+        $scope.$watch("name", function () {
+            if ($scope.name) {
+                console.log($scope.name);
+            }
+        });
+    });
+
+</script>
+</html>
+
