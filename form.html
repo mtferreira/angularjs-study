@@ -1,0 +1,6 @@
+<h2>{{{title}}}</h2>
+<form action="index.html" method="post" name="myForm">
+  <input type="text" ng-model="fruit" name="fruit" required>
+  <button type="button" ng-click="save()" ng-disabled="myForm.$invalid" name="button">Salvar</button>
+</form>
+<a href="#/">Cancelar</a>
