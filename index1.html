@@ -1,0 +1,28 @@
+<html ng-app="app">
+
+<head>
+  <title>Angular JS Study</title>
+  <link rel="stylesheet" href="/lib/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+  <script src="/lib/angular-1.4.3/angular.min.js"></script>
+  <script src="/lib/angular-1.4.3/angular-route.min.js"></script>
+  <script src="/lib/angular-1.4.3/angular-resource.min.js"></script>
+  <script src="app.js"></script>
+  <script src="controllers.js"></script>
+</head>
+</head>
+
+<body>
+  <h1>DeepLink Example</h1>
+  <div ng-controller="phoneController">
+    <input type="text" name="name" ng-model="idPhone" value="1">
+    <button ng-click="getPhoneById()" name="button">GetPhone By Id</button>
+    <hr/>
+    <button ng-click="getPhones()">GetPhones</button>
+    <hr/>
+    <button ng-click="savePhone()">Save Phone</button>
+    <hr/>
+    <button ng-click="deletePhone()">Delete Phone</button>
+  </div>
+</body>
+
+</html>
